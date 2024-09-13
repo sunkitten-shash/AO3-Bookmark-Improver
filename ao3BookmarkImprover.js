@@ -294,6 +294,11 @@
         let bookmarkWorkIds = await GM.getValue(workListName, []);
         let bookmarkBookmarkIds = await GM.getValue(bookmarkListName, []);
 
+        for (var i = 0, link, links = $("li.work[role=article]"); i < links.length; i++) {
+            let link = $(links[i]);
+            link.addClass("bookmark");
+        }
+
         // go through all of the works on the page
         // and add the save/saved button and its functionality
         for (var i = 0, link, links = $("li[role=article] > .header > .heading:first-child > a:not([href*=users]):not([href*=gifts])"); i < links.length; i++) {

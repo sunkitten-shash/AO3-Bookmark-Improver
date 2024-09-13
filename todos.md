@@ -8,6 +8,7 @@
   - This will take slightly more logic for choosing when addSaveButtons gets triggered, but shouldn't be overly complicated
 - Test on mobile, test logged out, test pages more
 - Test failing bookmark update requests?
+- There are some pages that bookmarks don't appear - note and fix those
 
 ## Maybe nice to have
 
