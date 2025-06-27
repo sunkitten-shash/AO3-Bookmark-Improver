@@ -9,6 +9,8 @@
 - Test on mobile, test logged out, test pages more
 - Test failing bookmark update requests?
 - There are some pages that bookmarks don't appear - note and fix those
+  - Author's works pages?
+  - Back button not appearing from bookmarks
 
 ## Maybe nice to have
 
@@ -20,6 +22,7 @@
   - just have an object with keys and values? but I'm relying on the orderedness of arrays
 - Make more cool settings
 - Try putting an x button on the settings like on the bookmark form for close
+- Put in a big enough delay that it can actually get all the bookmarks/finish
 
 ## Prettifying
 
