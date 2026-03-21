@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AO3 Bookmark Improver
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @license      MIT
 // @description  Bookmark a work directly from any page and go back from bookmarking to browsing quickly
 // @author       sunkitten_shash
@@ -430,7 +430,7 @@ const USE_SAVED_SCROLL_POS = true;
       i++
     ) {
       let link = $(links[i]);
-      let work_id = link.attr("href").split("/")[2];
+      let work_id = link.attr("href").match(/works\/(\d+)/)[1];
       let btnText = "Save";
       let urlModifier = `works/${work_id}/bookmarks/new`;
       // if this is already bookmarked
